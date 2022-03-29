@@ -23,7 +23,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="partsdetail wow fadeInleft" data-wow-duration="2s">
-                            <span>{{$autopart_details->get_product->title}}</span>
+                            <span>Chevrolet Trailblazer 2022</span>
                             <div class="partsrating">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -42,85 +42,82 @@
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="slider_products wow fadeInleft" data-wow-duration="2s">
                             <div class="slider-for1 slider">
-{{--                                <div>--}}
-{{--                                    <div class="productMainDetail">--}}
-{{--                                        <a href="{{ asset('images/parts1.jpg') }}" tabindex=" 0" data-fancybox="gallery">--}}
-{{--                                            <img src="{{ asset('images/parts1.jpg') }}" alt="" />--}}
-{{--                                        </a>--}}
-
-{{--                                    </div>--}}
-{{--                                </div>--}}
-                                @foreach($autopart_details->get_product->images as $images)
                                 <div>
                                     <div class="productMainDetail">
-                                        <a href="p{{ asset('uploads/products/'.$images->title) }}" tabindex="0" data-fancybox="gallery">
-                                            <img src="{{ asset('uploads/products/'.$images->title) }}" class="img-fluid" alt="" />
+                                        <a href="{{ asset('images/parts1.jpg') }}" tabindex=" 0" data-fancybox="gallery">
+                                            <img src="{{ asset('images/parts1.jpg') }}" alt="" />
                                         </a>
 
                                     </div>
                                 </div>
-                                @endforeach
 
-{{--                                <div>--}}
-{{--                                    <div class="productMainDetail">--}}
-{{--                                        <a href="{{ asset('images/parts3.jpg') }}" tabindex="0" data-fancybox="gallery">--}}
-{{--                                            <img src="{{ asset('images/parts3.jpg') }}" class="img-fluid" alt="" />--}}
-{{--                                        </a>--}}
-
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-
-{{--                                <div>--}}
-{{--                                    <div class="productMainDetail">--}}
-{{--                                        <a href="{{ asset('images/parts2.jpg') }}" tabindex="0" data-fancybox="gallery">--}}
-{{--                                            <img src="{{ asset('images/parts2.jpg') }}" class="img-fluid" alt="" />--}}
-{{--                                        </a>--}}
-
-{{--                                    </div>--}}
-{{--                                </div>--}}
-
-{{--                                <div>--}}
-{{--                                    <div class="productMainDetail">--}}
-{{--                                        <a href="{{ asset('images/parts2.jpg') }}" tabindex="0" data-fancybox="gallery">--}}
-{{--                                            <img src="{{ asset('images/parts2.jpg') }}" class="img-fluid" alt="" />--}}
-{{--                                        </a>--}}
-
-{{--                                    </div>--}}
-{{--                                </div>--}}
-                            </div>
-                            <div class="slider slider-nav1">
-                                @foreach($autopart_details->get_product->images as $images)
                                 <div>
-                                    <div class="productlistBox">
-                                        <img src="{{ asset('uploads/products/'.$images->title) }}" class="img-responsive" alt="">
+                                    <div class="productMainDetail">
+                                        <a href="p{{ asset('images/parts2.jpg') }}" tabindex="0" data-fancybox="gallery">
+                                            <img src="{{ asset('images/parts2.jpg') }}" class="img-fluid" alt="" />
+                                        </a>
+
                                     </div>
                                 </div>
-                                @endforeach
 
-{{--                                <div>--}}
-{{--                                    <div class="productlistBox">--}}
-{{--                                        <img src="{{ asset('images/parts2.jpg') }}" class="img-responsive" alt="">--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                <div>
+                                    <div class="productMainDetail">
+                                        <a href="{{ asset('images/parts3.jpg') }}" tabindex="0" data-fancybox="gallery">
+                                            <img src="{{ asset('images/parts3.jpg') }}" class="img-fluid" alt="" />
+                                        </a>
 
-{{--                                <div>--}}
-{{--                                    <div class="productlistBox">--}}
-{{--                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                    </div>
+                                </div>
 
-{{--                                <div>--}}
-{{--                                    <div class="productlistBox">--}}
-{{--                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
 
-{{--                                <div>--}}
-{{--                                    <div class="productlistBox">--}}
-{{--                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                <div>
+                                    <div class="productMainDetail">
+                                        <a href="{{ asset('images/parts2.jpg') }}" tabindex="0" data-fancybox="gallery">
+                                            <img src="{{ asset('images/parts2.jpg') }}" class="img-fluid" alt="" />
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="productMainDetail">
+                                        <a href="{{ asset('images/parts2.jpg') }}" tabindex="0" data-fancybox="gallery">
+                                            <img src="{{ asset('images/parts2.jpg') }}" class="img-fluid" alt="" />
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider slider-nav1">
+                                <div>
+                                    <div class="productlistBox">
+                                        <img src="{{ asset('images/parts1.jpg') }}" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="productlistBox">
+                                        <img src="{{ asset('images/parts2.jpg') }}" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="productlistBox">
+                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="productlistBox">
+                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="productlistBox">
+                                        <img src="{{ asset('images/parts3.jpg') }}" class="img-responsive" alt="">
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -130,7 +127,15 @@
                         <div class="cen_ter  wow fadeInRight" data-wow-duration="2s">
                             <div class="descrip">
                                 <h4>Description</h4>
-                                <p>{{$autopart_details->get_product->description}}</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                                    the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
+                                    the cites of the word in classical literature, discovered the undoubtable source. </p>
+                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                                    interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero
+                                    are also reproduced in their exact original form, accompanied by English versions from
+                                    the 1914 translation by H. Rackham.</p>
                             </div>
                             <div class="but_add">
                                 <div class="row">
@@ -159,7 +164,7 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
                                         <div class="des_btn res_btn">
-                                            <a href="javascript:void(0)" class="addtocart" data-productid="{{$autopart_details->get_product->id}}">Add to cart</a>
+                                            <a href="cart.php">Add to Cart</a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
@@ -169,28 +174,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h4>$ {{$autopart_details->get_product->price}}</h4>
+                                <h4>$ 1500.00</h4>
                             </div>
                         </div>
                     </div>
-                    @push('js')
-                        <script>
-                            $('.addtocart').click(function (){
-                                let product_id= $(this).data("productid");
-                                let quantity = $('.quantity-input').val();
-                                var data = {'product_id':product_id,'quantity':quantity,'_token':'{{csrf_token()}}'};
-                                var url = '{{route('ui_addToCart')}}';
-                                var res = AjaxRequest(url,data);
-                                if(res.status==1)
-                                {
-                                    // console.log(res.data);
-                                    $('.cart-count').html(res.count);
-                                    toastr["success"](res.msg);
-                                    // $('#internal_notes').val(res.data);
-                                }
-                            })
-                        </script>
-                    @endpush
+
                 </div>
                 <div class="related_pro">
                     <div class="row">

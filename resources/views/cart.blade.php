@@ -105,7 +105,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="cart_bt">
-                                <a href="{{route('ui_billing_details')}}">Checkout</a>
+                                <a href="billing-details.php">Checkout</a>
                             </div>
                         </div>
                     </div>

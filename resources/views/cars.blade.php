@@ -562,20 +562,9 @@
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="rightarea">
-                          @if($cars)
-
-                          @foreach ($cars as $value)
-
-
                             <div class="producbox">
                                 <div class="row">
                                     <div class="col-md-5 col-sm-5 col-xs-12">
-                                        {{--  <div class="partsimg">
-                                            <a href="{{route('UI_auto_parts_product',[$value->id])}}">
-                                            <img src="{{ asset('uploads/products/'.$value->get_product->images_take1->title) }}" alt="Part"
-                                                class="img-fluid">
-                                            </a>
-                                        </div>  --}}
                                         <div class="cars_img">
                                             <a data-fancybox="gallery" href="https://youtu.be/AFtUpMTs4vI" tabindex="0"><img
                                                     src="images/cars_1.png" alt="Part" class="img-fluid"><i
@@ -585,7 +574,7 @@
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <div class="partsdetail">
                                             <span>Chevrolet Trailblazer 2022</span>
-                                            {{--  <div class="partsrating">
+                                            <div class="partsrating">
                                                 <ul>
                                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
                                                     </li>
@@ -599,8 +588,7 @@
                                                     </li>
                                                     <li><small>4 on 3 reviews</small></li>
                                                 </ul>
-                                            </div>  --}}
-                                            <br>
+                                            </div>
                                             <div class="mera-year">
                                                 <ul>
                                                     <li>
@@ -685,9 +673,9 @@
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
 
-                            {{--  <div class="producbox">
+
+                            <div class="producbox">
                                 <div class="row">
                                     <div class="col-md-5 col-sm-5 col-xs-12">
                                         <div class="cars_img">
@@ -1022,7 +1010,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="producbox">
                                 <div class="row">
                                     <div class="col-md-5 col-sm-5 col-xs-12">
@@ -1133,7 +1120,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>  --}}
+                            </div>
 
                             <div class="productpagination">
                                 <nav aria-label="...">
@@ -1152,11 +1139,6 @@
                                     </ul>
                                 </nav>
                             </div>
-                            @else
-
-                            <h4> Product Not Found </h4>
-
-                            @endif
                         </div>
                     </div>
                 </div>

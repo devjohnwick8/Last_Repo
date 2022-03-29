@@ -437,20 +437,17 @@
                     </div>
                     <div class="col-md-8 col-sm-8 col-xs-12">
                         <div class="rightarea">
-                            @foreach($autoparts as $parts)
                             <div class="producbox">
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <div class="partsimg">
-                                            <a href="{{route('UI_auto_parts_product',[$parts->id])}}">
-                                            <img src="{{ asset('uploads/products/'.$parts->get_product->images_take1->title) }}" alt="Part"
+                                            <img src="{{ asset('images/parts1.jpg') }}" alt="Part"
                                                 class="img-fluid">
-                                            </a>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <div class="partsdetail">
-                                            <span>{{$parts->get_product->title}}</span>
+                                            <span>Brandix Spark Plug Kit</span>
                                             <div class="partsrating">
                                                 <ul>
                                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
@@ -468,11 +465,11 @@
                                             </div>
                                             <div class="partslist">
                                                 <ul>
-                                                    <li>Speed: {{$parts->speed}} RPM</li>
-                                                    <li>Power Source:{{$parts->powersource}}</li>
-                                                    <li>Battery Cell Type: {{$parts->battery_cell_type}}</li>
-                                                    <li>Voltage: {{$parts->voltage}}</li>
-                                                    <li>Battery Capacity: {{$parts->battery_capacity}}</li>
+                                                    <li>Speed: 750 RPM</li>
+                                                    <li>Power Source: Cordless-Electric</li>
+                                                    <li>Battery Cell Type: Lithium</li>
+                                                    <li>Voltage: 20 Volts</li>
+                                                    <li>Battery Capacity: 2 Ah</li>
                                                 </ul>
                                             </div>
                                             <div class="partfit">
@@ -483,244 +480,243 @@
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-12">
                                         <div class="cartbox">
-                                            <small>${{$parts->get_product->price}}</small>
-                                            <a href="javascript:void(0)" class="addtocart" data-productid="{{$parts->get_product->id}}">Add to cart</a>
+                                            <small>$1900.00</small>
+                                            <a href="cart.php">Add to cart</a>
                                         </div>
                                         <div class="whishlist">
                                             <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
-                                            {{--  <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>  --}}
+                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>
                                         </div>
                                         <div class="stock">
-                                            <small><strong>STOCK # </strong> {{$parts->get_product->stock}}</small>
+                                            <small><strong>STOCK # </strong> 753093</small>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
-{{--                            <div class="producbox">--}}
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsimg">--}}
-{{--                                            <img src="{{ asset('images/parts2.jpg') }}" alt="Part"--}}
-{{--                                                class="img-fluid">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsdetail">--}}
-{{--                                            <span>Brandix Spark Plug Kit</span>--}}
-{{--                                            <div class="partsrating">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><small>4 on 3 reviews</small></li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partslist">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li>Speed: 750 RPM</li>--}}
-{{--                                                    <li>Power Source: Cordless-Electric</li>--}}
-{{--                                                    <li>Battery Cell Type: Lithium</li>--}}
-{{--                                                    <li>Voltage: 20 Volts</li>--}}
-{{--                                                    <li>Battery Capacity: 2 Ah</li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partfit">--}}
-{{--                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011--}}
-{{--                                                    Ford Focus S</small>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="cartbox">--}}
-{{--                                            <small>$1900.00</small>--}}
-{{--                                            <a href="cart.php">Add to cart</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="whishlist">--}}
-{{--                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>--}}
-{{--                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="stock">--}}
-{{--                                            <small><strong>STOCK # </strong> 753093</small>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="producbox">--}}
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsimg">--}}
-{{--                                            <img src="{{ asset('images/parts3.jpg') }}" alt="Part"--}}
-{{--                                                class="img-fluid">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsdetail">--}}
-{{--                                            <span>Brandix Spark Plug Kit</span>--}}
-{{--                                            <div class="partsrating">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><small>4 on 3 reviews</small></li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partslist">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li>Speed: 750 RPM</li>--}}
-{{--                                                    <li>Power Source: Cordless-Electric</li>--}}
-{{--                                                    <li>Battery Cell Type: Lithium</li>--}}
-{{--                                                    <li>Voltage: 20 Volts</li>--}}
-{{--                                                    <li>Battery Capacity: 2 Ah</li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partfit">--}}
-{{--                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011--}}
-{{--                                                    Ford Focus S</small>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="cartbox">--}}
-{{--                                            <small>$1900.00</small>--}}
-{{--                                            <a href="cart.php">Add to cart</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="whishlist">--}}
-{{--                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>--}}
-{{--                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="stock">--}}
-{{--                                            <small><strong>STOCK # </strong> 753093</small>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="producbox">--}}
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsimg">--}}
-{{--                                            <img src="{{ asset('images/parts4.jpg') }}" alt="Part"--}}
-{{--                                                class="img-fluid">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsdetail">--}}
-{{--                                            <span>Brandix Spark Plug Kit</span>--}}
-{{--                                            <div class="partsrating">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><small>4 on 3 reviews</small></li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partslist">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li>Speed: 750 RPM</li>--}}
-{{--                                                    <li>Power Source: Cordless-Electric</li>--}}
-{{--                                                    <li>Battery Cell Type: Lithium</li>--}}
-{{--                                                    <li>Voltage: 20 Volts</li>--}}
-{{--                                                    <li>Battery Capacity: 2 Ah</li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partfit">--}}
-{{--                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011--}}
-{{--                                                    Ford Focus S</small>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="cartbox">--}}
-{{--                                            <small>$1900.00</small>--}}
-{{--                                            <a href="cart.php">Add to cart</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="whishlist">--}}
-{{--                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>--}}
-{{--                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="stock">--}}
-{{--                                            <small><strong>STOCK # </strong> 753093</small>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="producbox">--}}
-{{--                                <div class="row">--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsimg">--}}
-{{--                                            <img src="{{ asset('images/parts5.jpg') }}" alt="Part"--}}
-{{--                                                class="img-fluid">--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="partsdetail">--}}
-{{--                                            <span>Brandix Spark Plug Kit</span>--}}
-{{--                                            <div class="partsrating">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>--}}
-{{--                                                    </li>--}}
-{{--                                                    <li><small>4 on 3 reviews</small></li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partslist">--}}
-{{--                                                <ul>--}}
-{{--                                                    <li>Speed: 750 RPM</li>--}}
-{{--                                                    <li>Power Source: Cordless-Electric</li>--}}
-{{--                                                    <li>Battery Cell Type: Lithium</li>--}}
-{{--                                                    <li>Voltage: 20 Volts</li>--}}
-{{--                                                    <li>Battery Capacity: 2 Ah</li>--}}
-{{--                                                </ul>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="partfit">--}}
-{{--                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011--}}
-{{--                                                    Ford Focus S</small>--}}
-{{--                                            </div>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="col-md-4 col-sm-4 col-xs-12">--}}
-{{--                                        <div class="cartbox">--}}
-{{--                                            <small>$1900.00</small>--}}
-{{--                                            <a href="cart.php">Add to cart</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="whishlist">--}}
-{{--                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>--}}
-{{--                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>--}}
-{{--                                        </div>--}}
-{{--                                        <div class="stock">--}}
-{{--                                            <small><strong>STOCK # </strong> 753093</small>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                            <div class="producbox">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsimg">
+                                            <img src="{{ asset('images/parts2.jpg') }}" alt="Part"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsdetail">
+                                            <span>Brandix Spark Plug Kit</span>
+                                            <div class="partsrating">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><small>4 on 3 reviews</small></li>
+                                                </ul>
+                                            </div>
+                                            <div class="partslist">
+                                                <ul>
+                                                    <li>Speed: 750 RPM</li>
+                                                    <li>Power Source: Cordless-Electric</li>
+                                                    <li>Battery Cell Type: Lithium</li>
+                                                    <li>Voltage: 20 Volts</li>
+                                                    <li>Battery Capacity: 2 Ah</li>
+                                                </ul>
+                                            </div>
+                                            <div class="partfit">
+                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011
+                                                    Ford Focus S</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="cartbox">
+                                            <small>$1900.00</small>
+                                            <a href="cart.php">Add to cart</a>
+                                        </div>
+                                        <div class="whishlist">
+                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
+                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>
+                                        </div>
+                                        <div class="stock">
+                                            <small><strong>STOCK # </strong> 753093</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="producbox">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsimg">
+                                            <img src="{{ asset('images/parts3.jpg') }}" alt="Part"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsdetail">
+                                            <span>Brandix Spark Plug Kit</span>
+                                            <div class="partsrating">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><small>4 on 3 reviews</small></li>
+                                                </ul>
+                                            </div>
+                                            <div class="partslist">
+                                                <ul>
+                                                    <li>Speed: 750 RPM</li>
+                                                    <li>Power Source: Cordless-Electric</li>
+                                                    <li>Battery Cell Type: Lithium</li>
+                                                    <li>Voltage: 20 Volts</li>
+                                                    <li>Battery Capacity: 2 Ah</li>
+                                                </ul>
+                                            </div>
+                                            <div class="partfit">
+                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011
+                                                    Ford Focus S</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="cartbox">
+                                            <small>$1900.00</small>
+                                            <a href="cart.php">Add to cart</a>
+                                        </div>
+                                        <div class="whishlist">
+                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
+                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>
+                                        </div>
+                                        <div class="stock">
+                                            <small><strong>STOCK # </strong> 753093</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="producbox">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsimg">
+                                            <img src="{{ asset('images/parts4.jpg') }}" alt="Part"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsdetail">
+                                            <span>Brandix Spark Plug Kit</span>
+                                            <div class="partsrating">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><small>4 on 3 reviews</small></li>
+                                                </ul>
+                                            </div>
+                                            <div class="partslist">
+                                                <ul>
+                                                    <li>Speed: 750 RPM</li>
+                                                    <li>Power Source: Cordless-Electric</li>
+                                                    <li>Battery Cell Type: Lithium</li>
+                                                    <li>Voltage: 20 Volts</li>
+                                                    <li>Battery Capacity: 2 Ah</li>
+                                                </ul>
+                                            </div>
+                                            <div class="partfit">
+                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011
+                                                    Ford Focus S</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="cartbox">
+                                            <small>$1900.00</small>
+                                            <a href="cart.php">Add to cart</a>
+                                        </div>
+                                        <div class="whishlist">
+                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
+                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>
+                                        </div>
+                                        <div class="stock">
+                                            <small><strong>STOCK # </strong> 753093</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="producbox">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsimg">
+                                            <img src="{{ asset('images/parts5.jpg') }}" alt="Part"
+                                                class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="partsdetail">
+                                            <span>Brandix Spark Plug Kit</span>
+                                            <div class="partsrating">
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                                                    </li>
+                                                    <li><small>4 on 3 reviews</small></li>
+                                                </ul>
+                                            </div>
+                                            <div class="partslist">
+                                                <ul>
+                                                    <li>Speed: 750 RPM</li>
+                                                    <li>Power Source: Cordless-Electric</li>
+                                                    <li>Battery Cell Type: Lithium</li>
+                                                    <li>Voltage: 20 Volts</li>
+                                                    <li>Battery Capacity: 2 Ah</li>
+                                                </ul>
+                                            </div>
+                                            <div class="partfit">
+                                                <small><i class="fa fa-check" aria-hidden="true"></i> Part Fit for 2011
+                                                    Ford Focus S</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="cartbox">
+                                            <small>$1900.00</small>
+                                            <a href="cart.php">Add to cart</a>
+                                        </div>
+                                        <div class="whishlist">
+                                            <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
+                                            <a href="compare.php"><i class="fas fa-tachometer-alt"></i> Add to Compare</a>
+                                        </div>
+                                        <div class="stock">
+                                            <small><strong>STOCK # </strong> 753093</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="productpagination">
                                 <nav aria-label="...">
                                     <ul class="pagination">
@@ -749,21 +745,4 @@
 
     </main>
     <!-- end main -->
-    @push('js')
-        <script>
-            $('.addtocart').click(function (){
-                let product_id= $(this).data("productid");
-                var data = {'product_id':product_id,'_token':'{{csrf_token()}}'};
-                var url = '{{route('ui_addToCart')}}';
-                var res = AjaxRequest(url,data);
-                if(res.status==1)
-                {
-                    // console.log(res.data);
-                    $('.cart-count').html(res.count);
-                    toastr["success"](res.msg);
-                    // $('#internal_notes').val(res.data);
-                }
-            })
-        </script>
-    @endpush
 @endsection

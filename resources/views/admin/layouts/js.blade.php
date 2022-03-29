@@ -65,16 +65,36 @@
 
     /*for hiding div product page */
         $( document ).ready(function() {
+            // $("#dis_div").hide();
+
             if($("#dis_percentage").val() < 1){
                 $("#dis_div").hide();
             }
 
             $(function () {
                 $("#dis").click(function () {
+                    
                     if ($(this).is(":checked")) {
                         $("#dis_div").show();
                     } else {
                         $("#dis_div").hide();
+                    }
+                });
+            });
+        })
+
+        $( document ).ready(function() {
+            // $("#tec_div").hide();
+            if($("#tec_percentage").val() < 1){
+                $("#tec_div").hide();
+            }
+
+            $(function () {
+                $("#tec").click(function () {
+                    if ($(this).is(":checked")) {
+                        $("#tec_div").show();
+                    } else {
+                        $("#tec_div").hide();
                     }
                 });
             });

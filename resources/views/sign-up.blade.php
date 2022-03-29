@@ -61,51 +61,36 @@
                                 <small>Create an account</small>
                                 <p>Already have an account? <a href="{{ route('UI_login') }}">Sign in here</a></p>
                             </div>
-                            <form action="{{route('UI_sign_up_post')}}" method="post">@csrf
+                            <form>
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        @error('username')
-                                        <p class="text-danger" id="al">*{{$message}}</p>
-                                        @enderror
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" placeholder="Your Name*" name="username" value="{{ session()->getOldInput('username') }}">
+                                            <input type="text" class="form-control" placeholder="Your Name*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        @error('email')
-                                        <p class="text-danger" id="al">*{{$message}}</p>
-                                        @enderror
                                         <div class="mb-3">
-                                            <input type="email" class="form-control" placeholder="Email*" name="email" value="{{ session()->getOldInput('email') }}">
+                                            <input type="email" class="form-control" placeholder="Email*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        @error('phone_number')
-                                        <p class="text-danger" id="al">*{{$message}}</p>
-                                        @enderror
                                         <div class="mb-3">
-                                            <input type="number" class="form-control" placeholder="Phone Number*" name="phone_number" value="{{ session()->getOldInput('phone_number') }}">
+                                            <input type="number" class="form-control" placeholder="Phone Number*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        @error('password')
-                                        <p class="text-danger" id="al">*{{$message}}</p>
-                                        @enderror
                                         <div class="mb-3">
-                                            <input type="password" class="form-control" placeholder="Password*" name="password">
+                                            <input type="password" class="form-control" placeholder="Password*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        @error('password_confirmation')
-                                        <p class="text-danger" id="al">*{{$message}}</p>
-                                        @enderror
                                         <div class="mb-3">
-                                            <input type="password" class="form-control" placeholder="Confirm Password*" name="password_confirmation">
+                                            <input type="password" class="form-control" placeholder="Confirm Password*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                             <label class="form-check-label" for="exampleCheck1">I have read and agreed to
                                                 the <a href="#">Term and Condiitons</a></label>
                                         </div>

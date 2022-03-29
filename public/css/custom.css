@@ -1595,7 +1595,7 @@ footer {
   top: 3px;
 }
 
-/*
+/* 
  * Position both images in same place
 */
 .hover-switch > img {
@@ -1604,7 +1604,7 @@ footer {
   left: calc(50% - 40px);
 }
 
-/*
+/* 
  * Show the last image by default
 */
 .hover-switch > img:last-of-type {
@@ -1614,7 +1614,7 @@ footer {
   -webkit-transition: opacity 0.5s ease-in-out;
 }
 
-/*
+/* 
  * Hide the last image on hover
 */
 .hover-switch:hover > img:last-of-type {
@@ -3352,232 +3352,6 @@ li.color-change {
 }
 
 /* Disclamier*/
-/* /* change Password css start */
-
-.login-main {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.login_box {
-  border-radius: 5px;
-  padding: 40px 40px 20px;
-  background-color: #ffffff;
-  float: left;
-  width: 100%;
-  border: 1px solid #b5b5b5;
-}
-
-.login_box h2 {
-  color: #0071bc;
-  font-size: 30px;
-  font-weight: 500;
-  padding-bottom: 20px;
-}
-
-.login_box input {
-  height: 50px;
-  border-radius: 4px;
-  padding-left: 20px;
-  color: #a7a7a7;
-  box-shadow: none;
-  font-weight: normal;
-  font-size: 15px;
-  border: 1px solid #dbdbdb;
-  background: #f8f8f8;
-  margin: 0;
-}
-
-.login_box label {
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  float: left;
-}
-
-.login_box .form-group {
-  margin-bottom: 25px;
-}
-
-.checkbox label {
-  color: #555555;
-  font-size: 14px;
-}
-
-.submit_btn input {
-  width: 100%;
-  height: 60px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 19px;
-  font-weight: 600;
-  transition: 0.5s ease-in-out;
-  border: 0;
-  border-radius: 5px;
-}
-
-.submit_btn input:hover {
-  background: #777777;
-}
-
-.login_box .form-control:focus {
-  box-shadow: none;
-}
-
-.submit_btn input {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  padding: 0 0px;
-  color: #fff;
-  margin: 0;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  text-transform: capitalize;
-  border: 2px solid #ff0000;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 48px;
-  width: 60%;
-  background: #ff0909;
-}
-.submit_btn input:hover {
-  background-color: transparent;
-  color: #ff0000;
-  border: 2px solid #ff0000;
-}
-
-/* change Password css end  */
-/*  my_orders start */
-.mein_order {
-  padding: 5% 0;
-}
-
-.mein_order .btn.btn_red {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-  padding: 0 0px;
-  color: #fff;
-  margin: 0;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  text-transform: capitalize;
-  border: 2px solid #ff0000;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 130px;
-  background: #ff0000;
-}
-/* my_orders end */
-/* /* change Password css start */
-
-.login-main {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.login_box {
-  border-radius: 5px;
-  padding: 40px 40px 20px;
-  background-color: #ffffff;
-  float: left;
-  width: 100%;
-  border: 1px solid #b5b5b5;
-}
-
-.login_box h2 {
-  color: #0071bc;
-  font-size: 30px;
-  font-weight: 500;
-  padding-bottom: 20px;
-}
-
-.login_box input {
-  height: 50px;
-  border-radius: 4px;
-  padding-left: 20px;
-  color: #a7a7a7;
-  box-shadow: none;
-  font-weight: normal;
-  font-size: 15px;
-  border: 1px solid #dbdbdb;
-  background: #f8f8f8;
-  margin: 0;
-}
-
-.login_box label {
-  color: #000;
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 0px;
-}
-
-.login_box .form-group {
-  margin-bottom: 25px;
-}
-
-.checkbox label {
-  color: #555555;
-  font-size: 14px;
-}
-
-.submit_btn input {
-  width: 100%;
-  height: 60px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 19px;
-  font-weight: 600;
-  transition: 0.5s ease-in-out;
-  border: 0;
-  border-radius: 5px;
-}
-
-.submit_btn input:hover {
-  background: #777777;
-}
-
-.login_box .form-control:focus {
-  box-shadow: none;
-}
-
-.submit_btn input {
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 500;
-  padding: 0 0px;
-  color: #fff;
-  margin: 0;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  text-transform: capitalize;
-  border: 2px solid #ef0202;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 58px;
-  width: 100%;
-  background: #ef0202;
-}
-
-.submit_btn input:hover {
-  background-color: transparent;
-  color: #ff0000;
-  border: 2px solid #ff0000;
-}
-
-/* change Password css end  */
 
 /* Media Query Css st */
 @media (max-width: 1024px) {
@@ -3697,22 +3471,6 @@ li.color-change {
 
   .table-space h3 {
     font-size: 20px;
-  }
-  .login_box label {
-    font-size: 18px;
-  }
-  .submit_btn input {
-    font-size: 17px;
-    line-height: 20px;
-    height: 48px;
-    width: 80%;
-  }
-  .mein_order table.dataTable thead th,
-  table.dataTable thead td {
-    padding: 10px 0;
-    border-bottom: 1px solid #111;
-    text-align: center;
-    font-size: 16px;
   }
 }
 
@@ -4128,21 +3886,6 @@ li.color-change {
   .signUpForm .drophead p {
     text-align: center;
     font-size: 14px;
-  }
-  .submit_btn input {
-    font-size: 14px;
-    line-height: 20px;
-    height: 48px;
-    width: 90%;
-  }
-  .mein_order table.dataTable thead th,
-  table.dataTable thead td {
-    font-size: 12px !important;
-  }
-  .mein_order table.dataTable tbody th,
-  table.dataTable tbody td {
-    padding: 15px 10px;
-    font-size: 12px !important;
   }
 }
 
@@ -4732,37 +4475,6 @@ li.color-change {
     margin: 30px auto;
     display: table;
   }
-  .mein_order .dataTables_wrapper .dataTables_length,
-  .dataTables_wrapper .dataTables_filter {
-    float: left !important;
-    width: 50%;
-    text-align: left;
-  }
-  .mein_order .dataTables_wrapper .dataTables_filter {
-    margin-top: 0;
-  }
-  .mein_order table.dataTable tbody th,
-  table.dataTable tbody td {
-    padding: 9px 3px !important;
-    font-size: 11px !important;
-  }
-  .mein_order table.dataTable thead th,
-  table.dataTable thead td {
-    font-size: 10px !important;
-  }
-  .mein_order .dataTables_wrapper .dataTables_info,
-  .dataTables_wrapper .dataTables_paginate {
-    float: left !important;
-    text-align: center;
-    width: 50%;
-  }
-  .mein_order .dataTables_wrapper .dataTables_paginate {
-    margin-top: 0 !important;
-  }
-  .mein_order .btn.btn_red {
-    font-size: 14px;
-    margin: 20px 0 0;
-  }
 }
 
 @media (max-width: 425px) {
@@ -5276,64 +4988,6 @@ li.color-change {
     width: 60%;
     margin: 30px auto;
     display: table;
-  }
-  .login_box {
-    padding: 40px 10px 20px;
-  }
-
-  .login_box label {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-  .submit_btn input {
-    font-size: 13px;
-    line-height: 20px;
-    height: 48px;
-    width: 40%;
-  }
-  .mein_order .dataTables_wrapper .dataTables_length,
-  .dataTables_wrapper .dataTables_filter {
-    float: left !important;
-    width: 50%;
-    text-align: left;
-    font-size: 14px;
-  }
-  .mein_order .dataTables_wrapper .dataTables_filter {
-    margin-top: 0;
-  }
-  .mein_order table.dataTable tbody th,
-  table.dataTable tbody td {
-    padding: 9px 3px !important;
-    font-size: 8px !important;
-  }
-  .mein_order table.dataTable thead th,
-  table.dataTable thead td {
-    font-size: 8px !important;
-  }
-  .mein_order .dataTables_wrapper .dataTables_info,
-  .dataTables_wrapper .dataTables_paginate {
-    float: left !important;
-    text-align: left;
-    width: 50%;
-    font-size: 12px;
-  }
-  .mein_order .dataTables_wrapper .dataTables_paginate {
-    margin-top: 0 !important;
-  }
-  .mein_order .btn.btn_red {
-    font-size: 12px;
-    margin: 20px 0 0;
-    width: 26%;
-    height: 29px;
-  }
-  .mein_order .dataTables_wrapper .dataTables_filter input {
-    width: 60%;
-    height: 30px;
-  }
-  .mein_order .dataTables_wrapper .dataTables_length select {
-    padding: 5px 1px;
-    width: 25%;
-    font-size: 15px;
   }
 }
 
@@ -5872,20 +5526,6 @@ li.color-change {
     width: 60%;
     margin: 30px auto;
     display: table;
-  }
-  .login_box {
-    padding: 40px 10px 20px;
-  }
-
-  .login_box label {
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-  .submit_btn input {
-    font-size: 13px;
-    line-height: 20px;
-    height: 48px;
-    width: 40%;
   }
 }
 

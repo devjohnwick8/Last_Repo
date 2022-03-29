@@ -24,7 +24,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="gettouch">
-                                    <h2>Step 2: Add Your Billing Details</h2>
+                                    <h2>Step 2: Add Your Details</h2>
                                 </div>
                             </div>
                         </div>
@@ -32,61 +32,60 @@
                             <div class="commentSection">
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <form action="{{route('ui_post_billing_details')}}" method="POST" class="row g-3">
-                                            @csrf
+                                        <form class="row g-3">
                                             <div class="col-md-6">
                                                 <label for="name" class="form-label">First Name*</label>
-                                                <input type="text" class="form-control" name="first_name" id="Name" required>
+                                                <input type="text" class="form-control" id="Name">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="Name" class="form-label">Last Name*</label>
-                                                <input type="text" class="form-control" required name="last_name" id="Name">
+                                                <input type="text" class="form-control" id="Name">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="Name" class="form-label">Company Name (Optional)</label>
-                                                <input type="text" class="form-control" required name="company_name" id="Name" >
+                                                <input type="text" class="form-control" id="Name">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="exampleDataList" class="form-label">Country /
                                                     Region*</label>
-                                                <input class="form-control" name="country" type="text" id="exampleDataList" required>
-                                                {{--  <datalist id="datalistOptions">
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList">
+                                                <datalist id="datalistOptions">
                                                     <option value="San Francisco">
                                                     <option value="New York">
                                                     <option value="Seattle">
                                                     <option value="Los Angeles">
                                                     <option value="Chicago">
-                                                </datalist>  --}}
+                                                </datalist>
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="email" class="form-label">Street Address*</label>
-                                                <input type="text" required  name="address1" class="form-control" id="email">
+                                                <input type="email" class="form-control" id="email">
                                             </div>
                                             <div class="col-md-6">
-                                                <label for="text" class="form-label">Street Address*</label>
-                                                <input type="text" required name="address2" class="form-control" id="Number">
+                                                <label for="email" class="form-label">Street Address*</label>
+                                                <input type="text" class="form-control" id="Number">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="name" class="form-label">Town*</label>
-                                                <input type="text" name="town" required class="form-control" id="name">
+                                                <input type="text" class="form-control" id="name">
                                             </div>
                                             <div class="col-md-6">
                                                 <label for="text" class="form-label">Postal / ZIP (Optional)</label>
-                                                <input type="number" name="zip_code" class="form-control" id="number" required>
+                                                <input type="number" class="form-control" id="number">
                                             </div>
 
                                             <div class="col-md-6">
                                                 <label for="text" class="form-label">Phone*</label>
-                                                <input type="number" name="phone" class="form-control" id="number" required>
+                                                <input type="number" class="form-control" id="number">
                                             </div>
 
                                             <div class="col-md-6">
                                                 <label for="email" class="form-label">Email Address*</label>
-                                                <input type="email" class="form-control" id="email" name="email" value="{{auth()->user()->email}}" readonly>
+                                                <input type="email" class="form-control" id="email">
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-floating">
-                                                    <textarea class="form-control" name="notes" required placeholder="Leave a comment here"
+                                                    <textarea class="form-control" placeholder="Leave a comment here"
                                                         id="Order Notes (Optional)" style="height: 150px"></textarea>
                                                     <label for="floatingTextarea2">Notes about your order, e.g. special
                                                         notes for delivery. </label>
@@ -94,8 +93,8 @@
                                             </div>
 
                                             <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">
-                                                        Proceed<i class="fa fa-angle-right"
+                                                <button type="submit" class="btn btn-primary"> <a href="card-details.php">
+                                                        Proceed</a><i class="fa fa-angle-right"
                                                         aria-hidden="true"></i></button>
                                             </div>
                                         </form>

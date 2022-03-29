@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-12">
                 <div class="logofooter">
-                    <a href="{{ route('UI_home') }}"><img src="{{asset('images/logofooter.png')}}" alt="Logo"
+                    <a href="{{ route('UI_home') }}"><img src="images/logofooter.png" alt="Logo"
                             class="img-fluid"></a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>

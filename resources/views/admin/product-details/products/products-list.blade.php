@@ -9,7 +9,7 @@
         </nav>
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Products-List</h1>
+                <h1 class="h4">Products-List (Auto Parts)</h1>
             </div>
             <div>
                 <a href="{{route('admin_products_add')}}" class="btn btn-outline-gray"><i class="far fa-plus-square mr-1"></i> Add New Product</a>
@@ -29,8 +29,11 @@
                     <thead class="thead-light">
                     <tr>
                         <th class="border-0">#</th>
-                        <th class="border-0">Name</th>
                         <th class="border-0">Image</th>
+                        <th class="border-0">Name</th>
+                        <th class="border-0">Price</th>
+                        <th class="border-0">Stock</th>
+                        <th class="border-0">Sku</th>                  
                         <th class="border-0">Status</th>
                         <th class="border-0">Action</th>
                     </tr>
@@ -41,10 +44,14 @@
                     @foreach($products as $key=>$value)
                         <tr>
                             <td class="border-0"><a href="#" class="text-primary font-weight-bold">{{$key+1}}</a> </td>
-                            <td class="border-0 font-weight-bold">{{$value->title}}</td>
                             <td class="border-0">
-                                <img class="img-list" src="{{asset('uploads/products/'.$value->images_take1->title)}}" alt="{{$value->title}}">
+                           
+                                <img class="img-list" src="{{$value->images_take1 ? asset('uploads/products/'.$value->images_take1->title) : ''}}" alt="{{$value->title}}">
                             </td>
+                            <td class="border-0 font-weight-bold">{{$value->title}}</td>
+                            <td class="border-0 font-weight-bold">${{$value->price}}</td>
+                            <td class="border-0 font-weight-bold">{{$value->stock}}</td>
+                            <td class="border-0 font-weight-bold">{{$value->sku}}</td>
                             <td class="border-0 font-weight-bold">
                                 <span class="{{$value->status == 1 ? 'text-success' : 'text-danger'}}">{{$value->status == 1 ? 'Active' : 'Inactive'}}</span>
                             </td>

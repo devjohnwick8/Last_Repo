@@ -21,26 +21,6 @@
     @include('layouts.header')
     {{-- @endif --}}
 
-{{--    for toaster     --}}
-    @push('js')
-        <script>
-            $(document).ready(function() {
-                @if(Session::has('success'))
-                    toastr["success"](' {{ Session::get('success') }}');
-                @endif
-                    @if(Session::has('failed'))
-                    toastr["error"]('{{ Session::get('failed') }}');
-                @endif
-                    @if(Session::has('out_of_stock'))
-                    toastr["error"]('{{ Session::get('out_of_stock') }}');
-                @endif
-                    @if(Session::has('already_exist'))
-                    toastr["error"]('{{ Session::get('already_exist') }}');
-                @endif
-            });
-        </script>
-    @endpush
-
 
 
     @yield('content')

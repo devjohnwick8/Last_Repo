@@ -4,13 +4,13 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
                 <li class="breadcrumb-item"><a href="{{route('admin_dashboard')}}"><span class="fas fa-home"></span></a></li>
-                <li class="breadcrumb-item"><a href="{{route('admin_users')}}">Blog-List</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Blog-Edit</li>
+                <li class="breadcrumb-item"><a href="{{route('admin_users')}}">User-List</a></li>
+                <li class="breadcrumb-item active" aria-current="page">User-Edit</li>
             </ol>
         </nav>
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Blog Edit</h1>
+                <h1 class="h4">User Edit</h1>
             </div>
         </div>
 

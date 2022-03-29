@@ -61,21 +61,22 @@
                                 <small>Log In</small>
                                 <p>Sign in to CarFirst or <a href="{{ route('UI_sign_up') }}">Create a new account</a></p>
                             </div>
-                            <form action="{{route('ui_login_data_post')}}" method="post">@csrf
+                            <form>
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="mb-3">
-                                            <input type="email" class="form-control" placeholder="Email Address*" name="email" value="{{ session()->get('email') }}">
+                                            <input type="email" class="form-control" placeholder="Email Address*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="mb-3">
-                                            <input type="password" class="form-control" placeholder="Password*" name="password">
+                                            <input type="password" class="form-control" placeholder="Password*">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="mb-3 form-check">
-                                            <label class="form-check-label" for="exampleCheck1"><a
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Stay Logged in? <a
                                                     href="#">Forgotten Password</a></label>
                                         </div>
                                     </div>

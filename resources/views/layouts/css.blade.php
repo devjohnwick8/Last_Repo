@@ -5,5 +5,4 @@
 <link rel="stylesheet" href="{{ asset('css/slick.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}" />
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}" />
-<link href="{{asset('css/toastr.css')}}" rel="stylesheet" type="text/css" />
 @stack('css')

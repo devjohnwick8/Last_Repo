@@ -36,7 +36,7 @@
                     <div class="main-logo">
                         <div class="logo">
                             <a href="{{ route('UI_home') }}">
-                                <img loading="lazy" src="{{asset('images/logo.png')}}" class="img-responsive"
+                                <img loading="lazy" src="images/logo.png" class="img-responsive"
                                     alt="Elite design hub logo" width="100%" height="50" />
                             </a>
                         </div>
@@ -48,67 +48,31 @@
                             <ul class="navbar-set">
                                 <li class="active"><a href="{{ route('UI_home') }}">Home</a></li>
                                 <li class=""><a href="{{ route('UI_about_us') }}">About Us</a></li>
-                                <li class="btn-group show-on-hover">
-                                    <a href="javascript:void(0)">
-                                        Shop <span></span>
-                                      <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" role="menu">
-                                      <li class=""><a href="{{route('UI_auto_parts')}}">Auto Parts</a></li>
-                                      <li class="">
-                                        <a href="{{route('UI_cars')}}">Cars</a>
-                                      </li>
-
-                                    </ul>
-                                  </li>
-
                                 <li class=""><a href="{{ route('UI_our_service') }}">Services</a></li>
                                 <li class="btn-group show-on-hover">
                                     <a href="javascript:void(0)">
                                         Motor World<span></span>
                                         <span class="caret"></span>
                                     </a>
-
+                                    <!-- <ul class="dropdown-menu" role="menu">
+                      <li class=""><a href="#">Custom Logo Design</a></li>
+                      <li class="">
+                        <a href="#">Web Design and Development</a>
+                      </li>
+                      <li class=""><a href="#">Mobile Application</a></li>
+                      <li class=""><a href="#">Digital Marketing</a></li>
+                      <li class=""><a href="#">Branding</a></li>
+                      <li class=""><a href="#">Video Animation</a></li>
+                    </ul> -->
                                 </li>
                                 <li class=""><a href="{{ route('UI_contact_us') }}">Contact Us</a></li>
                                 <li>
-{{--                                    <a href="javascript:void(0)" data-bs-toggle="modal"--}}
-{{--                                        data-bs-target="#exampleModal2"><i class="fa fa-search"--}}
-{{--                                            aria-hidden="true"></i></a>--}}
-                                    <a href="{{route('ui_cart')}}">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true">
-                                            @if(session()->has('cart'))
-                                            <span class="cart-count">{{count(session()->get('cart'))}}</span>
-                                            @else
-                                            <span class="cart-count">0</span>
-                                            @endif
-                                        </i>
-                                    </a>
+                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal2"><i class="fa fa-search"
+                                            aria-hidden="true"></i></a>
 
                                 </li>
-                                <li>
-                                    @if(Auth::check())
-                                    <li class="btn-group show-on-hover">
-                                        <a href="javascript:void(0)"> <i class="fa-solid fa-caret-down"></i>
-                                            {{ auth()->user()->username }}<span></span>
-                                          <span class="caret"></span>
-                                        </a>
-                                        <ul class="dropdown-menu" role="menu">
-                                          <li class=""><a href="{{route('UI_my_profile')}}">My Profile</a></li>
-                                          <li class="">
-                                            <a href="{{route('UI_my_order')}}">My Order</a>
-                                          </li>
-                                          <li class=""><a href="{{route('UI_change_password')}}">Change Password</a></li>
-                                          {{--  <!--<li class=""><a href="digital-marketing.php">Digital Marketing</a></li>-->  --}}
-                                          {{--  <li class=""><a href="branding.php">Branding</a></li>  --}}
-                                          <li class=""><a href="{{route('UI_logout')}}"> Logout </a></li>
-                                        </ul>
-                                      </li>
-                                    {{--  <a href="{{route('UI_logout')}}" class="loginbtn"> {{ auth()->user()->username }} (Logout)</a>  --}}
-                                    @else
-                                    <a href="{{route('UI_login')}}" class="loginbtn"> Login</a>
-                                    @endif
-                                </li>
+                                <li><a href="{{ route('UI_login') }}" class="loginbtn">Login</a></li>
                             </ul>
                         </div>
                     </div>

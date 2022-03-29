@@ -12,7 +12,7 @@
                 <h1 class="h4">Users-List</h1>
             </div>
             <div>
-                <a href="{{route('admin_users_add')}}" class="btn btn-outline-gray"><i class="far fa-plus-square mr-1"></i> Add New Blog</a>
+                <!-- <a href="{{route('admin_users_add')}}" class="btn btn-outline-gray"><i class="far fa-plus-square mr-1"></i> Add New Blog</a> -->
             </div>
         </div>
     </div>
@@ -46,9 +46,7 @@
                             <td class="border-0 font-weight-bold">{{$value->email}}</td>
                             <td class="border-0 font-weight-bold">
                                 {{$value->user_role == 1 ? 'Admin' : '' }}
-                                {{$value->user_role == 2 ? 'User' : ''}}
-                                {{$value->user_role == 3 ? 'Vendor' : ''}}
-                                {{$value->user_role == 4 ? 'Customer' : ''}}
+                                {{$value->user_role == 2 ? 'Customer' : ''}}
                             </td>
                             <td class="border-0 font-weight-bold">
                                 <span class="{{$value->status == 1 ? 'text-success' : 'text-danger'}}">{{$value->status == 1 ? 'Active' : 'Inactive'}}</span>

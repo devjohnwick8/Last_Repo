@@ -101,15 +101,13 @@
                     <div class="tabslinks">
                         <div class="tab-nav">
                             <ul>
-{{--                                <li class="active"><span data-href="#tab-1">HONDO</span></li>--}}
-                                @foreach($subcategories as $subcat)
-                                <li><span data-href="#tab-2">{{$subcat->title}}</span></li>
-                                @endforeach
-{{--                                <li><span data-href="#tab-3">TOYOTO</span></li>--}}
-{{--                                <li><span data-href="#tab-4">PORCE</span></li>--}}
-{{--                                <li><span data-href="#tab-5">MUSTIBISHA</span></li>--}}
-{{--                                <li><span data-href="#tab-6">DASTIN</span></li>--}}
-{{--                                <li><span data-href="#tab-7">SIZUKA</span></li>--}}
+                                <li class="active"><span data-href="#tab-1">HONDO</span></li>
+                                <li><span data-href="#tab-2">FORT</span></li>
+                                <li><span data-href="#tab-3">TOYOTO</span></li>
+                                <li><span data-href="#tab-4">PORCE</span></li>
+                                <li><span data-href="#tab-5">MUSTIBISHA</span></li>
+                                <li><span data-href="#tab-6">DASTIN</span></li>
+                                <li><span data-href="#tab-7">SIZUKA</span></li>
                             </ul>
                         </div>
                     </div>

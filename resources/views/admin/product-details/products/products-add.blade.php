@@ -10,7 +10,7 @@
         </nav>
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Product Add</h1>
+                <h1 class="h4">Product Add (Auto Parts)</h1>
             </div>
         </div>
 
@@ -46,6 +46,22 @@
                                                     <label for="textarea">Description</label>
                                                 <textarea class="form-control" placeholder="Enter your message..." id="textarea" rows="5" name="description"></textarea>
                                             </div>
+                                            <div class="col-sm-12">
+                                            <div class="mb-4">
+                                                <label for="title">Speed</label>
+                                                <input type="text" class="form-control" required name="speed" placeholder="Enter your Speed...">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="title">PowerSource</label>
+                                                <input type="text" class="form-control" required name="powersource" placeholder="Enter your Power Source...">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="title">Battery Cell Type</label>
+                                                <input type="text" class="form-control" required name="battery_cell_type" placeholder="Enter your Battery Cell...">
+                                            </div>
+                                            
+
+                                        </div>
                                             <fieldset class="my-4">
                                                 <legend class="h6">Status</legend>
                                                 <div class="form-check">
@@ -65,11 +81,23 @@
                                         <div class="col-sm-6">
                                             <div class="mb-4">
                                                 <label for="title">Price</label>
-                                                <input type="text" class="form-control" required name="price" placeholder="Enter your price...">
+                                                <input type="text" class="form-control" required name="price" placeholder="Enter your Price...">
                                             </div>
                                             <div class="mb-4">
                                                 <label for="title">Stock</label>
-                                                <input type="number" class="form-control" required name="stock" placeholder="Enter your stock...">
+                                                <input type="number" class="form-control" required name="stock" placeholder="Enter your Stock...">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="title">Sku</label>
+                                                <input type="number" class="form-control" required name="sku" placeholder="Enter your Sku...">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="title">Voltage</label>
+                                                <input type="text" class="form-control" required name="voltage" placeholder="Enter your Voltage...">
+                                            </div>
+                                            <div class="mb-4">
+                                                <label for="title">Battery Capacity</label>
+                                                <input type="text" class="form-control" required name="battery_capacity" placeholder="Enter your Battery Capacity...">
                                             </div>
                                             <div>
                                                 <label for="textarea">Image</label>
@@ -82,28 +110,29 @@
                                                     <div id="imagediv"></div>
                                                 </div>
                                             </div>
-                                            <div class="mb-4">
+                                            
+                                            <!-- <div class="mb-4">
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input" name="is_discounted" type="checkbox" id="dis" value="1">
-                                                            <label class="form-check-label" for="flexSwitchCheckChecked">Discounted</label>
+                                                            <label class="form-check-label" for="flexSwitchCheckChecked">Additional Featured</label>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-sm-6">
+                                                    </div> -->
+                                                    <!-- <div class="col-sm-6">
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input" name="is_featured" type="checkbox" id="flexSwitchCheckChecked" checked="" value="1">
                                                             <label class="form-check-label" for="flexSwitchCheckChecked">Featured</label>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div> -->
+                                                <!-- </div>
                                             </div>
                                             <div class="mb-4" id="dis_div">
                                                 <div class="mb-4">
                                                     <label for="title">Discounted Percentage</label>
                                                     <input type="number" class="form-control" name="discounted_percentage" placeholder="Enter your dicounted percentage...">
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                         </div>
                                     </div>

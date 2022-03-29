@@ -4,15 +4,15 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb breadcrumb-dark breadcrumb-transparent">
                 <li class="breadcrumb-item"><a href="{{route('admin_dashboard')}}"><span class="fas fa-home"></span></a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sub-Categories</li>
+                <li class="breadcrumb-item active" aria-current="page">Categories</li>
             </ol>
         </nav>
         <div class="d-flex justify-content-between w-100 flex-wrap">
             <div class="mb-3 mb-lg-0">
-                <h1 class="h4">Sub-Categories-List</h1>
+                <h1 class="h4">Categories-List</h1>
             </div>
             <div>
-                <a href="{{route('admin_sub_categories_add')}}" class="btn btn-outline-gray"><i class="far fa-plus-square mr-1"></i> Add New Sub-Category</a>
+                <a href="{{route('admin_sub_categories_add')}}" class="btn btn-outline-gray"><i class="far fa-plus-square mr-1"></i> Add New Category</a>
             </div>
         </div>
     </div>
